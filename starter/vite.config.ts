@@ -21,7 +21,10 @@ export const config = defineConfig({
 				if (id.endsWith('.css')) {
 					// probably shouldn't inject `@custom-media` directly since it can cause an error such as:
 					//   @import rules must precede all rules aside from @charset and @layer statements
-					return `@import "/src/custom-media.css";` + code
+					return (
+						`@import "../css/media-queries.css";@import "../css/browser-queries.css";` +
+						code
+					)
 				}
 			},
 		},
