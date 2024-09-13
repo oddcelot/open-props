@@ -10,14 +10,15 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.3.4",
-		"@astrojs/starlight": "^0.15.2",
+		"@astrojs/check": "^0.9.3",
+		"@astrojs/starlight": "^0.27.1",
 		"@astrojs/svelte": "^5.0.3",
 		"astro": "^4.1.1",
 		"color-name-list": "^10.19.0",
-		"colorjs.io": "^0.4.5",
+		"colorjs.io": "^0.5.2",
 		"nearest-color": "^0.4.4",
 		"sharp": "^0.33.1",
+		"svelte": "^4.2.19",
 		"typescript": "^5.3.3"
 	}
 }
