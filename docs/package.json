@@ -12,13 +12,13 @@
 	"dependencies": {
 		"@astrojs/check": "^0.9.3",
 		"@astrojs/starlight": "^0.27.1",
-		"@astrojs/svelte": "^5.0.3",
-		"astro": "^4.1.1",
-		"color-name-list": "^10.19.0",
+		"@astrojs/svelte": "^6.0.0-alpha.0",
+		"astro": "^4.15.5",
+		"color-name-list": "^10.25.1",
 		"colorjs.io": "^0.5.2",
 		"nearest-color": "^0.4.4",
-		"sharp": "^0.33.1",
-		"svelte": "^4.2.19",
-		"typescript": "^5.3.3"
+		"sharp": "^0.33.5",
+		"svelte": "next",
+		"typescript": "^5.6.2"
 	}
 }
