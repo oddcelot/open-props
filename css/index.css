@@ -1,4 +1,4 @@
-@import 'media-queries.css';
+/* @import 'media-queries.css'; */
 @import 'font/families.css';
 @import 'font/weight.css';
 @import 'sizes/font.css';
@@ -13,3 +13,9 @@
 @import 'shadows.css';
 @import 'motion/easings.css';
 @import 'color/palette.oklch.css';
+
+
+:root {
+		--brand: oklch(85.36% 0.192 160.28);
+
+}

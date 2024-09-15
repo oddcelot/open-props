@@ -1,13 +1,15 @@
 import browserslist from 'browserslist'
 import { defineConfig } from 'vite'
 import { browserslistToTargets, bundleAsync } from 'lightningcss'
+import { Features } from 'lightningcss'
 
 export const config = defineConfig({
 	css: {
 		transformer: 'lightningcss',
 		lightningcss: {
-			targets: browserslistToTargets(browserslist('>= 0.25%')),
+			// targets: browserslistToTargets(browserslist('>= 0.25%')),
 			drafts: { customMedia: true },
+			exclude: Features.OklabColors,
 		},
 	},
 	build: {
