@@ -1,6 +1,6 @@
 @import '../../css/index.css';
 @import '../../css/color/green.hex.css';
-/* @import '../../css/packs/normalize'; */
+@import '../../css/packs/normalize';
 
 
 :root {

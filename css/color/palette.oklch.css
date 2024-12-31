@@ -1,8 +1,25 @@
-:where(:root) {
-	--palette-hue: 250; /* <angle */
-	--palette-hue-rotate-by: 0; /* +- deg : warm or cool the palette */
-	--palette-chroma: 0.15; /* 0-1 : lower to mute and pastel, over 2 at own risk */
+/* angle */
+@property --palette-hue {
+	syntax: '<number> | <angle> | <custom-ident>' ;
+	inherits: true;
+	initial-value: 100;
 }
+
+/* +- deg : warm or cool the palette */
+@property --palette-hue-rotate-by {
+	syntax: '<number> | <custom-ident>	';
+	inherits: true;
+	initial-value: 1;
+}
+
+/* 0-1 : lower to mute and pastel, over 2 at own risk */
+@property --palette-chroma {
+	syntax: '<number>';
+	inherits: true;
+	initial-value: 1;
+}
+
+
 
 * {
 	--color-1: oklch(
@@ -14,7 +31,7 @@
 			calc(var(--palette-hue) + (1 * var(--palette-hue-rotate-by)))
 	);
 	--color-3: oklch(
-		93% calc(0.1 * var(--palette-chroma, 1))
+		93% calc(0.1 * var(--palette-chroma, 1))x
 			calc(var(--palette-hue) + (2 * var(--palette-hue-rotate-by)))
 	);
 	--color-4: oklch(

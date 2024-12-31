@@ -14,6 +14,11 @@
 @import 'motion/easings.css';
 @import 'color/palette.oklch.css';
 
+@property --test {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #c0ffee;
+}
 
 :root {
 		--brand: oklch(85.36% 0.192 160.28);
